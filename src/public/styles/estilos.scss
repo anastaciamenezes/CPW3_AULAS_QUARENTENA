@@ -1,0 +1,63 @@
+@import 'fontes';
+@import 'cores';
+body {
+    margin: 0;
+}
+
+#banner {
+    background-color: $cor-banner;
+    color: white;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+    h1 {
+        font-family: $fonte-decorativa;
+        font-size: 250%;
+        text-shadow: 3px 3px black;
+    }
+    p {
+        font-family: $fonte-padrao;
+    }
+}
+
+#centro {
+    display: flex;
+    font-family: $fonte-padrao;
+}
+
+#menu {
+    width: 20%;
+    background-color: $cor-menu;
+    color: white;
+    padding: 20px 0px 40px 20px;
+    span {
+        font-size: 150%;
+        font-family: $fonte-negrito;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $cor-hover;
+            }
+        }
+        li {
+            margin-bottom: 7px;
+        }
+    }
+}
+
+#conteudo {
+    width: 80%;
+    padding: 10px;
+}
+
+#rodape {
+    background-color: $cor-rodape;
+    color: white;
+    padding: 20px;
+    font-size: 80%;
+    font-family: $fonte-negrito;
+}

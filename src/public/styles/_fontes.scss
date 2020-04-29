@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'negrito';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'decorativa';
+    src: url(../fonts/RobotoMono-Regular.ttf);
+}
+
+$fonte-padrao: 'padrao';
+$fonte-negrito: 'negrito';
+$fonte-decorativa: 'decorativa';
