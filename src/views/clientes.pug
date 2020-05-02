@@ -1,5 +1,29 @@
 extends layout
 
 block conteudo
+    h2 Clientes
 
-        h2 Clientes    
+    #cadastroCliente
+    form(action="/clientes", method="post")
+        label(for="nome") Nome
+        input(type="text", name="nome", required)
+        label(for="email") E-mail
+        input(type="email", name="email", required)
+        input(type="submit", value="Salvar")
+
+    #visualizacaoClientes 
+        h3 Clientes cadastrados
+
+        if clientes && clientes.lenght > 0
+            table
+                thead
+                    tr
+                        th Nome
+                        th E-mail
+                tbody
+                    each cliente in clientes
+                        tr
+                           td #{cliente.nome}
+                           td #{cliente.email}
+        else
+            span Nenhum cliente cadastrado 
