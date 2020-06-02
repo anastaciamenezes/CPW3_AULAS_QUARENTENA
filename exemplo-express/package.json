@@ -1,0 +1,25 @@
+{
+    "name": "exemplo-express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --exec babel-node src/server.js",
+        "sass": "node-sass src/public/styles/estilos.scss src/public/styles/estilos.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/node": "^7.8.7",
+        "@babel/preset-env": "^7.9.5",
+        "express": "^4.17.1",
+        "faker": "^4.1.0",
+        "pug": "^2.0.4"
+    },
+    "devDependencies": {
+        "node-sass": "^4.14.0",
+        "nodemon": "^2.0.3"
+    }
+}

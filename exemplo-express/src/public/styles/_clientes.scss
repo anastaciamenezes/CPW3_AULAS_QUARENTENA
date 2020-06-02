@@ -1,0 +1,62 @@
+#cadastroCliente {
+    input {
+        display: block;
+        margin: auto;
+        &[type=text],
+        &[type=email] {
+            height: 25px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid $cor-borda-campos;
+            text-align: center;
+            width: 300px;
+            background-color: $cor-campos;
+            color: $cor-texto-campos;
+            font-size: 95%;
+            padding: 3px;
+            &:focus {
+                background-color: white;
+            }
+        }
+        &[type=submit] {
+            margin-top: 10px;
+            background-color: $cor-botoes;
+            color: $cor-texto-botoes;
+            font-size: 100%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+#visualizacaoClientes {
+    margin-top: 50px;
+    table {
+        margin: auto;
+        width: 60%;
+        border-collapse: collapse;
+    }
+    thead {
+        background-color: $cor-cabecalho-tabela;
+        tr {
+            height: 35px;
+            color: $cor-texto-cabecalho-tabela;
+        }
+    }
+    tbody {
+        tr {
+            height: 25px;
+            &:nth-child(even) {
+                background-color: $cor-linhas-pares-tabela;
+            }
+        }
+    }
+    #painelBotoesTabela {
+        margin-top: 20px;
+        img {
+            width: 20px;
+            margin: 5px 20px;
+        }
+    }
+}
