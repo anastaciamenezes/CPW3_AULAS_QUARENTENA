@@ -20,7 +20,7 @@ let clientes = [{
 
 
 /**
- * Criando a rota da página inicial
+ * Criando  rota da página inicial
  */
 router.get('/', (req, res) => res.render('index'));
 
@@ -28,12 +28,14 @@ router.get('/', (req, res) => res.render('index'));
  * Criando a rota da página de clientes
  */
 router.get('/clientes', (req, res) => {
+
     res.render('clientes', { clientes });
 });
 
 /**
  * Criando a rota para salvar um novo cliente
  */
+
 router.post('/clientes', (req, res) => {
     const nome = req.body.nome;
     const email = req.body.email;

@@ -5,7 +5,6 @@ import bodyParser from 'body-parser';
 import rotasView from './routes/view';
 
 const app = express();
-
 /**
  * Configuração das páginas
  */
@@ -22,13 +21,10 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 /**
- * Rotas de view
+ * Rotas de View
  */
 app.use('/', rotasView);
-
-
 
 
 export default app;

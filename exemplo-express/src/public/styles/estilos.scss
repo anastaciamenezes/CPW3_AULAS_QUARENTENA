@@ -1,5 +1,5 @@
-@import 'fontes';
 @import 'cores';
+@import 'fontes';
 body {
     margin: 0;
 }
@@ -16,6 +16,7 @@ body {
     }
     p {
         font-family: $fonte-padrao;
+        font-size: 150%;
     }
 }
 
@@ -29,37 +30,36 @@ body {
     background-color: $cor-menu;
     color: white;
     padding: 20px 0px 40px 20px;
-}
-
-#menu span {
-    font-size: 150%;
-    font-family: $fonte-negrito;
-}
-
-#menu ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 120%;
-}
-
-#menu a {
-    text-decoration: none;
-    color: white;
+    span {
+        font-size: 150%;
+        font-family: $fonte-negrito;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        font-size: 120%;
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $cor-hover;
+            }
+        }
+    }
+    li {
+        margin-bottom: 7px;
+    }
 }
 
 #conteudo {
     width: 90%;
     padding: 10px;
-    text-align: center;
-    margin: auto;
 }
 
 #rodape {
     background-color: $cor-rodape;
-    color: white;
+    color: gray;
     padding: 20px;
     font-size: 80%;
     font-family: $fonte-negrito;
 }
-
-@import 'clientes';

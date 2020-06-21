@@ -1,5 +1,5 @@
 {
-    "name": "exemplo-express",
+    "name": "exemplob-express",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,15 +11,14 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@babel/core": "^7.9.0",
-        "@babel/node": "^7.8.7",
-        "@babel/preset-env": "^7.9.5",
+        "@babel/core": "^7.10.3",
+        "@babel/node": "^7.10.3",
+        "@babel/preset-env": "^7.10.3",
         "express": "^4.17.1",
-        "faker": "^4.1.0",
-        "pug": "^2.0.4"
+        "pug": "^3.0.0"
     },
     "devDependencies": {
-        "node-sass": "^4.14.0",
-        "nodemon": "^2.0.3"
+        "node-sass": "^4.14.1",
+        "nodemon": "^2.0.4"
     }
 }
