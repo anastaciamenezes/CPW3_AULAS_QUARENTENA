@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 
-import rotasView from './routes/view';
+import rotasClientes from './routes/clientes';
 
 const app = express();
 /**
@@ -24,7 +24,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 /**
  * Rotas de View
  */
-app.use('/', rotasView);
 
+//Criando a rota da página inicial
+app.get('/', (req, res) => res.render('index'));
+
+//Criando a rota de clientes
+app.use('/clientes', rotasClientes);
 
 export default app;
