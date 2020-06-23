@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'padrao';
+  src: url(../fonts/Pacifico-Regular.ttf); }
+
+@font-face {
+  font-family: 'negrito';
+  src: url(../fonts/Raleway-Bold.ttf); }
+
+@font-face {
+  font-family: 'decorativa';
+  src: url(../fonts/Lobster-Regular.ttf); }
+
+body {
+  margin: 0; }
+
+#banner {
+  background-color: #89c4f4;
+  color: white;
+  text-align: center;
+  padding: 50px 0px 30px 0px; }
+  #banner h1 {
+    font-family: "decorativa";
+    font-size: 250%;
+    text-shadow: 3px 3px black; }
+  #banner p {
+    font-family: "padrao";
+    font-size: 150%; }
+
+#centro {
+  display: flex;
+  font-family: "padrao"; }
+
+#menu {
+  width: 20%;
+  background-color: #5c97bf;
+  color: white;
+  padding: 20px 0px 40px 20px; }
+  #menu span {
+    font-size: 150%;
+    font-family: "negrito"; }
+  #menu ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 120%; }
+    #menu ul a {
+      text-decoration: none;
+      color: white; }
+      #menu ul a:hover {
+        color: #e4f1fe; }
+  #menu li {
+    margin-bottom: 7px; }
+
+#conteudo {
+  width: 90%;
+  padding: 10px; }
+  #conteudo img {
+    width: 5%;
+    height: auto;
+    padding: 20px; }
+
+#rodape {
+  background-color: #65c6bb;
+  color: gray;
+  padding: 20px;
+  font-size: 80%;
+  font-family: "negrito"; }

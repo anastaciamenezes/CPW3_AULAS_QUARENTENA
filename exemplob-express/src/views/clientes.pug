@@ -1,0 +1,39 @@
+extends layout
+
+block conteudo
+    h2 Clientes
+
+    #cadastroCliente
+        form(action="/clientes", method="post")
+            label(for="nome") Nome
+            input(type="text", name="nome", required)
+            label(for="email") E-mail
+            input(type="email", name="email", required)
+            input(type="submit", value="Salvar")
+
+    #visualizacaoClientes
+        h3 Clientes cadastrados
+
+        if clientes && clientes.length > 0
+            table
+                thead
+                    tr
+                        th Nome
+                        th Email 
+                tbody
+                        each cliente in clientes
+                            tr
+                                td #{cliente.nome}
+                                td #{cliente.email}
+
+            #painelBotoesTabela
+                a(href='/clientes/1')
+                    img(src="/img/primeiro.png", alt="Primeira página")
+                a(href=`/clientes/${paginaAtual > 1 ? paginaAtual - 1 : paginaAtual}`)
+                    img(src="/img/anterior.png", alt="Página anterior")
+                a(href=`/clientes/${paginaAtual < ultimaPagina ? ++paginaAtual : paginaAtual}`)
+                    img(src="/img/proximo.png", alt="Próxima página")
+                a(href=`/clientes/${ultimaPagina}`)
+                    img(src="/img/ultimo.png", alt="Última página")                           
+        else
+            span Nenhum cliente cadastrado                        

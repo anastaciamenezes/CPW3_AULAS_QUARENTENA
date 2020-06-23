@@ -1,0 +1,1 @@
+Implementação da paginação de itens para a visualização da tabela de clientes, referente a aula 04 de CPW3/IFMS campus Aquidauana/MS, 2020.
