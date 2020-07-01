@@ -1,0 +1,16 @@
+extends layout
+
+block conteudo
+    h2 Cadastro de Usuario
+    #cadastroUsuario
+        form(action="/cadastro", method="post")
+            label(for="nome") Nome
+            input(type="text", name="nome", required)
+            label(for="email") E-mail
+            input(type="text", name="email", placeholder="E-mail", required)
+            label(for="senha") Senha    
+            input(type="password", name="senha", placeholder="senha", required)
+            input(type="submit", value="Salvar")
+
+        if mensagem
+            span= mensagem                           

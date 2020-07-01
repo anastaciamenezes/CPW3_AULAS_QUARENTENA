@@ -1,0 +1,20 @@
+doctype html
+
+html
+    head
+        link(rel="shortcut icon", href="favicon.png", type="image/png")
+        link(rel="stylesheet", href="styles/estilos.css")
+        title Auth TSI
+    body
+        #banner
+            img(src="img/logo.png", alt="Segurança")
+            h1 Auth TSI
+            if usuario
+                if usuario.login == 'admin@email.com'
+                    a(href="/cadastro" class="cadastro-usuario") Cadastro de Usuário
+                    a(href="/botaologout" alt="botaologout")
+                        img(src="img/logout.png", alt="Sair")
+             
+        #conteudo
+            block conteudo
+                
